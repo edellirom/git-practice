@@ -14,6 +14,8 @@ git branch
 # Show all branches, remotes tracking includes
 git branch -a
 
+git branch -r
+
 # Show all remotes branches
 git ls-remote
 
