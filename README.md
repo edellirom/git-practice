@@ -8,7 +8,23 @@ git log
 #### Branches
 Show all branches:
 ``` shell
+# Show local branches
 git branch
+
+# Show all branches, remotes tracking includes
+git branch -a
+
+# Show all remotes branches
+git ls-remote
+
+# Creates remotes/origin/develop branch and 'push' to it
+git push origin develop
+
+# Show tracking branches
+git branch -vv
+
+# Track feature local branch to feature remote branch
+git branch --track feature origin/feature
 ```
 Create new branch and switch to it 
 ``` shell
