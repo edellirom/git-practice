@@ -11,24 +11,31 @@ Show all branches:
 # Show local branches
 git branch
 
-# Show all branches, remotes tracking includes
+# Show local and remote branches
 git branch -a
 
-# Show remotes tracking branhes
+# Show remote branches
 git branch -r
 
-# Show all remotes branches
+# Show all remote refs branches
 git ls-remote
 
 # Creates remotes/origin/develop branch and 'push' to it
 git push origin develop
-
+```
+Tracking branches (We can use git push without additional params origin master).
+Connect local tracing branch with remote tracking branch
+``` shell
 # Show tracking branches
 git branch -vv
 
 # Track feature local branch to feature remote branch
 git branch --track feature origin/feature
+
+# If we allready exists local branch (feature), we need to remove it
+git branch -D feature
 ```
+
 Create new branch and switch to it 
 ``` shell
 git checkout -b develop
